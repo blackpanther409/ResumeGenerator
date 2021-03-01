@@ -1,0 +1,133 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{ENTER NAME}
+\tagline{College}
+
+%\photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{yourmail@gmail.com}
+   \phone{+91-000000000}
+%  \mailaddress{Address, Street, 00000 County}
+  \location{Bangalore, Karnataka - India}
+%  \homepage{webpage.com/}
+%  \twitter{@twitter_id}
+  \github{https://github.com/<USER_NAME>/}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+% For experienced replace Technical Courses with Work History
+\cvsection[Rightsidebar]{Technical Courses}
+
+\cvevent{SOME COURSE 1}{Platform/College }{Apr 2019 - Sep 2019}{Online/Offline}
+\begin{itemize}
+\item {Learnt about interacting embedded systems with physical world}
+\smallskip
+\item {Got hands on experience building sophisticated hardware and software interactions using Raspberry PI
+and Arduino boards. I had fun experimenting new sensors and writing software taking actions based on received
+data from sensors}
+\smallskip
+\item {Learnt a lot exploring Raspberry pi}
+\end{itemize}
+
+\divider
+
+\cvevent{Master Linux Command Line}{Udemy}{Apr 2020 - May 2020}{Online}
+\begin{itemize}
+\item Learnt operating Linux computer using command line,  
+\smallskip
+\item {Learnt internal workings on command line, it is very interesting and i am more curious on this exploring daily}
+\end{itemize}
+
+\divider
+
+\cvevent{Introduction to Git and Github}{Coursera}{Sep 2020 - Dec 2020} {Online}
+\begin{itemize}
+\item {Learnt about git version control. How versioning is maintained by each commit and how history is maintained}
+\smallskip
+\item Learnt about github how pull requests are raised, reviews are done
+\end{itemize}
+
+%\divider
+
+%\cvsection{Achievements}
+%\smallskip
+%\begin{itemize}
+%\b
+%\smallskip
+%\item Scored 2 nd position in inter-school Badminton Championship.
+%\smallskip
+%\Leader for my team
+%\end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+\smallskip
+%\begin{itemize}
+\cvtag {MATLAB} \cvtag {MS Office} \cvtag {Arduino}  \cvtag {Xilinx vivado} \cvtag {Cadence}
+\smallskip
+\cvtag {C} \cvtag {Python} \cvtag {Verilog} \cvtag {Embedded C}
+\smallskip
+%\end{itemize}
+
+\cvsection{Hobbies}
+\smallskip
+\smallskip
+\begin{itemize}
+\item \cvtag {Playing badminton}
+\smallskip
+\item \cvtag {Dance}
+\smallskip
+\item \cvtag {Watching Movies}
+\end{itemize}
+
+\clearpage
+
+% \cvsection[page2sidebar]{Publications}
+
+\nocite{*}
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+
+% \divider
+
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+
+% % \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
