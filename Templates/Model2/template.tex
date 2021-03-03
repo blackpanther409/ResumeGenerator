@@ -1,0 +1,200 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage[latin]{babel}
+\usepackage{blindtext}
+
+%\usepackage{moderncvcompatibility}
+%\usepackage{moderncvstyleclassic}
+%\verb|Facebook|: \faFacebook \quad \faFacebookSquare \par
+%\verb|Twitter|: \faTwitter \quad \faTwitterSquare \par
+%\verb|Github|: \faGithub \quad \faGithubSquare \par
+%\verb|HTML5|: \faHtml5 \par
+ 
+%\verb|Pinterest|: \faPinterest \quad \faPinterestSquare \par
+%\verb|Google+|: \faGooglePlus \quad \faGooglePlusSquare
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{profile_pic.jpeg} % Profile picture
+
+\cvname{Name} % Your name
+\cvjobtitle{Job title} % Job title/career
+\cvdate{}% Date of birth
+\cvaddress{} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{99********} % Phone number
+%\cvsite{}%Personal website
+\cvmail{emailaddress@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{I like to \blindtext } % To have no About Me section, just remove all the text and leave \aboutme{}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{{verilog HDL/2},{mysql/3},{Java/2},{HTML/3},{C/4}}
+
+%------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+
+
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+Machine learning and Deep learning
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{since 20XX}{B.Tech {\normalfont Computer Engineering}}{(8/10)}{University Name, City.}
+	\twentyitem{20XX-20XX}{Intermediate MPC}{(80/100)}{College Name, City.}
+	\twentyitem{20XX-20XX}{High school}{(10/10)}{High school Name, city.}
+
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+ 
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+
+\section{Experience}
+\\~\\
+\textbf{Internship at XYZ company,City} - Jan,20XX to Feb,20XX\\
+Worked on project with various technologies like,
+\begin{itemize}
+\item Machine Learning for classification.
+\item NLP for text analysis.
+\item ...
+\end{itemize}
+
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{20XX - now}{PROJECT 1}{}{Working to achieve so and so, using so and so technologies. Achieved so and so until now.\blindtext}
+	\twentyitem{20XX}{PROJECT 2}{}{Worked to achieve so and so, using so and so technologies. Achieved so and so. Learnt so and so.}   
+    \twentyitem{20XX}{PROJECT 3}{}{\blindtext} 
+	\twentyitem{20XX}{PROJECT 4}{}
+	{
+	SUBJECT
+	\\*about sub project 1 in a line.
+	\\*about sub project 2 in a line.
+	\\*about sub project 3 in a line.
+	}
+	
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+%\newpage
+%\begin{changemargin}{-1cm}{-1cm}
+
+
+\newgeometry{left=2cm,bottom=0.1cm,top = 1.5cm}
+
+
+%\makeprofile 
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+\begin{itemize}
+\item Participated in XYZ contest - 2nd Place.  \hfill(20XX)
+\item Participated in ABC contest - 3rd Place.  \hfill(20XX)
+\end{itemize}
+
+\section{Workshops/Conferences attended}
+
+\begin{itemize}
+\item Amazon AI Conclave - virtual event. \hfill(20XX)
+\item TFGU India Summit - virtual event. \hfill(20XX)
+\item {PYCON India 2 days conference, Chennai.} \hfill(20XX)
+ 
+\end{itemize}
+	%\twentyitemshort{<dates>}{<title/description>}
+
+\section{Other activities}
+
+
+\begin{itemize}
+\item Worked as XYZ club coordinator at ABC institute, improving the XYZ skills among students by conducting contests.\hfill(20XX \& 20XX)
+
+\end{itemize}
+
+\section{Hobbies}
+\begin{itemize}
+%\item Listening to music and identifying the different instrumental sounds - decoding the music.
+\item Singing and Dancing.
+\end{itemize}
+
+%\end{changemargin}
+\restoregeometry
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{%Other information}
+
+
+\end{document} 
